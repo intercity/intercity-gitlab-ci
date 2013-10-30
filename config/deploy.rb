@@ -27,7 +27,7 @@ namespace :gitlab_ci do
     run "#{try_sudo} ln -nfs #{shared_path}/config/application.yml #{release_path}/config/application.yml"
   end
 
-  desc "Executes bundle exec  rake gitlab:setup."
+  desc "Executes bundle exec rake gitlab:setup."
   task :setup do
     run "cd #{current_path} && bundle exec rake gitlab:setup RAILS_ENV=production force=yes"
   end
