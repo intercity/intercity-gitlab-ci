@@ -1,6 +1,5 @@
 require 'bundler/capistrano'
 require 'intercity/capistrano'
-require 'sidekiq/capistrano'
 
 set :application, "gitlab_production"
 set :repository,  "https://github.com/gitlabhq/githlab-ci.git"
